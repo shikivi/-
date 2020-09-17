@@ -45,6 +45,7 @@
 
 ### 优化思路
 使用gated convolution在训练网络时将mask的形状也作为信息可以学习（代价是参数多了一倍）
+
 <img src="./picture/16.png">
 <img src="./picture/05.png">
 
