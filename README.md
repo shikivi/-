@@ -5,10 +5,10 @@
 ### 2、Image inpainting
 #### 图像修补的目的是修复被各种类型内容影响的失真，其中包括状遮挡、文本遮挡、噪声、目标遮挡、图像掩膜、照片划痕等。图像修补的结果需要维持原图整体的和谐统一。
 ## 期望效果
-<p><img src="./picture/1.png" width="49%"></p>
-<p><img src="./picture/2.png" width="49%"></p>
-<p><img src="./picture/3.png" width="49%"></p>
-<p><img src="./picture/4.png" width="49%"></p>
+<p><img src="./picture/1.png" width="49%"><center>原图</center></p>
+<p><img src="./picture/2.png" width="49%"><center>追踪</center></p>
+<p><img src="./picture/3.png" width="49%"><center>移除</center></p>
+<p><img src="./picture/4.png" width="49%"><center>补全</center></p>
 
 ## 第一部分：Visual Tracking
 选择基于 Cascade R-CNN 实现的 Siam R-CNN 算法进行目标追踪。
