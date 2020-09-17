@@ -5,7 +5,8 @@
 ### 2、Image inpainting
 #### 图像修补的目的是修复被各种类型内容影响的失真，其中包括状遮挡、文本遮挡、噪声、目标遮挡、图像掩膜、照片划痕等。图像修补的结果需要维持原图整体的和谐统一。
 ## 期望效果
-<p><img src="./picture/01.png" width="100%"></p>
+<img src="./picture/01.png">
+
 ## 第一部分：Visual Tracking
 选择基于 Cascade R-CNN 实现的 Siam R-CNN 算法进行目标追踪。
 ### 尝试进行的优化
@@ -25,20 +26,32 @@
 检查发现数据集中图片像素过低，在相似度计算和边框回归计算时误差会较大，影响最终的追踪准确率和成功率
 对数据集中所有图片输入前进行图像超分预处理，这里使用的是基于tensorflow实现的 LapSRN 网络模型。
 对所有图片数据的ground_truth进行等比例放缩，比例与图像超分设置的比例一致。
+<img src="./picture/02.png">
+<img src="./picture/03.png">
+
 ## 第二部分：Image inpainting
 基础模型-GMCNN。
+<img src="./picture/11.png">
+
 主要思想：
 1、生成多列的CNN结构，不同大小的卷积核提取不同内容
 2、对抗训练有全局和局部两个鉴别器
 ### 存在问题
 生成效果高度依赖训练时定义的mask形状和大小。
 当mask的形状变化时，生成结果很差。
-无法适应视频中物体运动时大小形状会变化的需求
+无法适应视频中物体运动时大小形状会变化的需求。
+
+<img src="./picture/04.png">
+
 ### 优化思路
 使用gated convolution在训练网络时将mask的形状也作为信息可以学习（代价是参数多了一倍）
+<img src="./picture/16.png">
+<img src="./picture/05.png">
+
 ## 综合效果
-
-
+<img src="./picture/23.gif" style="margin-left: auto; margin-right: auto; display: block;">
+<img src="./picture/24.gif" style="margin-left: auto; margin-right: auto; display: block;">
+<img src="./picture/25.gif" style="margin-left: auto; margin-right: auto; display: block;">
 
 
 
