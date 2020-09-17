@@ -50,9 +50,9 @@
 <img src="./picture/05.png">
 
 ## 综合效果
-<img src="./picture/23.gif" style="margin-left: auto; margin-right: auto; display: block;">
-<img src="./picture/24.gif" style="margin-left: auto; margin-right: auto; display: block;">
-<img src="./picture/25.gif" style="margin-left: auto; margin-right: auto; display: block;">
+<img src="./picture/01.gif" style="margin-left: auto; margin-right: auto; display: block;">
+<img src="./picture/02.gif" style="margin-left: auto; margin-right: auto; display: block;">
+<img src="./picture/03.gif" style="margin-left: auto; margin-right: auto; display: block;">
 
 
 
