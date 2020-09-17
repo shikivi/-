@@ -5,8 +5,8 @@
 ### 2、Image inpainting
 #### 图像修补的目的是修复被各种类型内容影响的失真，其中包括状遮挡、文本遮挡、噪声、目标遮挡、图像掩膜、照片划痕等。图像修补的结果需要维持原图整体的和谐统一。
 ## 期望效果
-<img src="./picture/1.png" width="60%">
-![Image text]（https://raw.githubusercontent.com/shikivi/Eliminate-the-selected-objects-in-video/master/picture/1.png =100*60）
+<img src="./picture/1.png" width="49%">
+
 ## 第一部分：Visual Tracking
 选择基于 Cascade R-CNN 实现的 Siam R-CNN 算法进行目标追踪。
 ### 尝试进行的优化
